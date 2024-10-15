@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2 class="page-title">My-Weather</h2>
+  </header>
+  
+  <main>
+
+    <div class="hero-section">
+
+			<div class="headline">
+				<h1>How will the weather be?</h1>
+      	<h2>Find out for free!</h2>
+			</div>
+
+      <fieldset>
+        <legend>Search for your city</legend>
+        <label for="search">city: </label>
+        <input type="text" id="search" name="city">
+        <button type="button" class="queryBtn">search</button>
+      </fieldset>
+
+    </div>
+
+    <div class="weather-results hidden">  
+
+      <div class="hourly-weather">
+        <h2 class="address"></h2>
+        
+        <div class="hours-container">
+					
+					<div class="hours-col-1">
+						<table class="infoBox">
+							<thead>
+								<tr>
+									<th scope="col">time</th>
+									<th scope="col">conditions</th>
+									<th scope="col">temperature</th>
+									<th scope="col">humidity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="hour-0">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-1">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-2">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-3">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-4">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-5">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-6">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-7">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-8">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-9">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-10">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-11">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+						
+					<div class="hours-col-2">
+						<table class="infoBox">
+							<thead>
+								<tr>
+									<th scope="col">time</th>
+									<th scope="col">conditions</th>
+									<th scope="col">temperature</th>
+									<th scope="col">humidity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="hour-12">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-13">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-14">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-15">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-16">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-17">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-18">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-19">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-20">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-21">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-22">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+								<tr class="hour-23">
+									<td class="time"></td>
+									<td class="conditions"></td>
+									<td class="temp-current"></td>
+									<td class="humidity"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="daily-weather">
+				<h2>Rest of the week</h2>
+				<table class="infoBox">
+					<thead>
+						<tr>
+							<th scope="col" rowspan="2">date</th>
+							<th scope="col" rowspan="2">conditions</th>
+							<th scope="col" colspan="2">temperature</th>
+							<th scope="col" rowspan="2">humidity</th>
+							<th scope="col" rowspan="2">sunrise</th>
+							<th scope="col" rowspan="2">sunset</th>
+						</tr>
+						<tr>
+							<th>min.temp</th>
+							<th>max.temp</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="day1">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day2">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day3">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day4">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day5">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day6">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+						<tr class="day7">
+							<td class="date"></td>
+							<td class="conditions"></td>
+							<td class="temp-min"></td>
+							<td class="temp-max"></td>
+							<td class="humidity"></td>
+							<td class="sunrise"></td>
+							<td class="sunset"></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+  </main>
+</body>
+</html>
