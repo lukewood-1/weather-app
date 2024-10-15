@@ -94,12 +94,17 @@ function dailyTranslateMonth(datetime){
 async function showMetrics(){
   // Weather Query Selectors
   const searchQUery = document.getElementById('search').value.toLowerCase().replaceAll(',', '%2C').replaceAll(' ', '%20');
+  const queryBtn = document.querySelector('.queryBtn');
   const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchQUery}?unitGroup=metric&include=hours&key=8EUZ343G3E3T67YFRF5249MA4&contentType=json`;
 
   // DOM Selectors
 
   try{
+    queryBtn.textContent = 'loading...';
     const fetched = await fetch(url);
+    if(fetched.status === 200){
+      queryBtn.textContent = 'done!';
+    };
     const json = await fetched.json();
     console.log(json);
 
